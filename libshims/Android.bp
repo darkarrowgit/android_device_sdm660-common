@@ -1,0 +1,19 @@
+cc_library_shared {
+    name: "libcamera_sdm660_shim",
+    srcs: ["camera_sdm660_shim.cpp"],
+    shared_libs: [
+        "libui",
+        "libutils",
+    ],
+    vendor: true,
+}
+
+cc_library_shared {
+    name: "libcutils_shim",
+    srcs: [
+        "libcutils_shim/strdup8to16.cpp",
+        "libcutils_shim/strdup16to8.cpp",
+    ],
+    shared_libs: ["libcutils"],
+    product_specific: true,
+}
