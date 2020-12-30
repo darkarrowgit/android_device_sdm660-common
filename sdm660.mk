@@ -143,9 +143,6 @@ PRODUCT_PACKAGES += \
 
 # Camera
 PRODUCT_PACKAGES += \
-    Snap
-
-PRODUCT_PACKAGES += \
     android.hardware.camera.device@3.4:64 \
     android.hardware.camera.device@3.5:64 \
     android.hardware.camera.provider@2.4:64 \
@@ -297,11 +294,6 @@ PRODUCT_COPY_FILES += \
 # Lights
 PRODUCT_PACKAGES += \
     android.hardware.light@2.0-service.xiaomi_sdm660
-
-# LiveDisplay native
-PRODUCT_PACKAGES += \
-    vendor.lineage.livedisplay@2.0-service-sdm \
-    vendor.lineage.livedisplay@2.0-service-sysfs
 
 # Media
 PRODUCT_COPY_FILES += \
